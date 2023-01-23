@@ -1,0 +1,23 @@
+{
+  "name": "fullgocodeshopnov22lustig",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"nodemon index.js\" \"cd client && npm start\"",
+    "render-postbuild": "cd client && yarn install && yarn build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^6.8.3"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
